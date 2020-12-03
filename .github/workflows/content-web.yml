@@ -1,16 +1,16 @@
-me: content-web
+name: content-web
 
 # This workflow is triggered on push to the 'content-web' directory of the  master branch of the repository
 on:
-   push:
-      branches:
-         - master
-      paths:
-         - 'content-web/**'
+  push:
+    branches:
+      - master
+    paths:
+      - 'content-web/**'
 
-   # Configure workflow to also support triggering manually
-   workflow_dispatch:
-      inputs:
+# Configure workflow to also support triggering manually
+  workflow_dispatch:
+    inputs:
          logLevel:
             description: 'Log level'
             required: true
